@@ -69,6 +69,7 @@ TEST(BufferPoolManagerTest, DISABLED_SampleTest) {
   // Shutdown the disk manager and remove the temporary file we created.
   disk_manager->ShutDown();
   remove("test.db");
+  delete disk_manager;
 }
 
 }  // namespace bustub
